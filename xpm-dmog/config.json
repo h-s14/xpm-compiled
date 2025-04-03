@@ -1,0 +1,51 @@
+{
+  "image": {
+    "path": "images/rad080_raddev50_01_p60_d065.raw",
+    "size": [
+      256,
+      256,
+      33
+    ],
+    "resolution": 0.25e-06,
+    "phase": {
+      "void": 0,
+      "solid": 255
+    }
+  },
+  "macro": {
+    "trans_multiplier": 1,
+    "contact_angle": 59
+  },
+  "darcy": [
+    {
+      "value": 128,
+      "file": "phase01.json"
+    },
+    {
+      "value": 2,
+      "file": "phase02.json"
+    }
+  ],
+  "max_capillary_pressure": 50000000.0,
+  "solver": {
+    "cache": {
+      "use": false,
+      "save": true
+    },
+    "decomposition": [
+      3,
+      3,
+      3
+    ],
+    "tolerance": 1e-09,
+    "max_iterations": 250,
+    "aggressive_number_of_levels": 0
+  },
+  "report": {
+    "display": "pressure",
+    "invasion_percolation": false,
+    "occupancy_images": false,
+    "capillary_pressure_sw_step": 0.1,
+    "relative_permeability_sw_step": 0.1
+  }
+}

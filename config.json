@@ -1,0 +1,37 @@
+{
+  "image": {
+    "path": "../imagesNanoCT/rad160_raddev50_16_p26_d033.raw",
+    "size": [256, 256, 33],
+    "resolution": 0.25e-6,
+    "phase": {
+      "void": 0,
+      "solid": 255
+    }
+  },
+  "macro": {
+    "trans_multiplier": 1,
+    "contact_angle": 59
+  },
+  "darcy": [
+    { "value": 10, "file": "phase57.json" },
+    { "value": 20, "file": "phase57.json" }
+  ],
+  "max_capillary_pressure": 50e6,
+  "solver": {
+    "cache": {
+      "use": true,
+      "save": true
+    },
+    "decomposition": [8, 4, 3],
+    "tolerance": 1e-9,
+    "max_iterations": 250,
+    "aggressive_number_of_levels": 0
+  },
+  "report": {
+    "display": "pressure",
+    "invasion_percolation": true,
+    "occupancy_images": true,
+    "capillary_pressure_sw_step": 0.1,
+    "relative_permeability_sw_step": 0.1
+  }
+}
